@@ -5,10 +5,11 @@ import java.io.IOException;
 public class Prime {
     public static void main(String args[])throws IOException{
         System.out.print("Enter a number: ");
-        int n=System.in.read();
+        int n=System.in.read() - (int)'0';
         int i=2;
         int flag=-1;
         while(i<n){
+            System.out.print(i+", ");
             if(n%i==0){
                 System.out.println("Not prime");
                 flag=1; 
